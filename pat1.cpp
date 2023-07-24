@@ -29,5 +29,34 @@ int main(){
         cout<<"\n";
     }
 
+    cout<<endl;
+    //inverted half pyramid 
+       for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+        cout<<"*";
+        ;
+        }
+        c--;
+        cout<<"\n";
+    }
+    cout<<endl;    
+
+//hald pyramid after 180 degree rotation
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            if(j<(r-i-1)){
+                cout<<" ";
+            }
+            else{
+                cout<<"*";
+            }
+        }
+        cout<<"\n";
+    }
+
+    cout<<endl;
+
+//floyd's triangle
+
     return 0;
 }
